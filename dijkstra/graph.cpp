@@ -160,17 +160,11 @@ void Graph::dijkstra_h(int src) {
 	}
 	while(!heap->isEmpty());
 	
-	Node* temp = vertices[1];
-	
-	if(!temp->pred)
-	{
-		printf("There exist no s-t paths\n");
-	}
+	Node* temp = vertices[src];
 	
 	int vertexCount = 0;
 	
-	printf("Shortest Path found:\n");
-	printf("Distance: %f\n", vertices[0]->key);
+	printf("%f\n", vertices[0]->key);
 	
 	while(temp)
 	{
@@ -182,7 +176,7 @@ void Graph::dijkstra_h(int src) {
 		vertexCount++;
 	}
 	
-	printf("\nVertices passed: %d\n", vertexCount);
+	printf("\n%d\n", vertexCount);
 	
 	
 }

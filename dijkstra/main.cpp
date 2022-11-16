@@ -7,7 +7,6 @@ int main(int argc, char *argv[]) {
 	int n = 9;
 	Graph g(n);
 	
-	// making above shown graph
 	g.addEdge(0, 1, 4);
 	g.addEdge(0, 7, 8);
 	g.addEdge(1, 2, 8);
